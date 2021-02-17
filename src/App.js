@@ -4,14 +4,19 @@ import axios from 'axios';
  class App extends React.Component{
      state = {
          isLoading: true,
-         movies: [],
+         movies: [], 
      };
 
      getMovies = async () => {
-         const movies = await axios.get("https://yts-proxy.now.sh/list_movies.json");
-         console.log(movies);
-     };
+         // 구조 분해 할당 적용
 
+         const {
+             data: {
+                 data: { movies },
+              },
+            } = await axios.get("https://yts-proxy.now.sh/list_movies.json");
+        this.setState({ movies });
+        };
      componentDidMount(){
         this.getMovies();
      }
