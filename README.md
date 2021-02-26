@@ -1,3 +1,3 @@
-# Movie App 2020
+# Movie App 2021
 
-React JS Fundametals Course (2020 Update!)
+React JS Fundametals Course (2021 Update!)
