@@ -47,3 +47,9 @@
     flex-wrap : wrap;
     margin:5px 0px;
 }
+
+.movie__genres li,
+.movie .movie_year {
+    margin-right: 10px;
+    font-size:14px;
+}
